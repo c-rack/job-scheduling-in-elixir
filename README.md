@@ -1,2 +1,5 @@
 # job-scheduling-in-elixir
-Slides of my talk at elixir.ruhr meetup on 2016-02-11 in Bochum, Germany
+
+[Slides of my talk](https://c-rack.github.io/job-scheduling-in-elixir/#/)
+at [elixir.ruhr](http://eleixir.ruhr/) meetup on 2016-02-11 in Bochum, Germany
+
