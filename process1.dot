@@ -1,0 +1,22 @@
+digraph G {
+
+	color="#ffffff";
+	fillcolor="#ffffff";
+	fontcolor=red;
+	bgcolor="#002b36";
+	style=filled;
+	node [style=filled,color=lightgrey];
+
+	subgraph cluster_0 {
+			style=filled;
+			color=lightgrey;
+			fillcolor=lightgrey;
+			node [style=filled,color=gray];
+			"C1A" [label="Atoms"];
+			"C1S" [label="Stack"];
+			"C1F" [label="Functions"];
+			"C1M" [label="Mailbox"];
+			label="process #1";
+		};
+
+}

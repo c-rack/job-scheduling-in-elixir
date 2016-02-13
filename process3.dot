@@ -1,0 +1,44 @@
+digraph G {
+
+	color="#ffffff";
+	fillcolor="#ffffff";
+	fontcolor=red;
+	bgcolor="#002b36";
+	style=filled;
+
+	"S1" [
+	    style=filled
+	    fillcolor=white
+	    label="Supervisor"
+	];
+
+	"C1" [
+	    style=filled
+	    fillcolor=white
+	    label="Child 2"
+	];
+
+	"C2" [
+	    style=filled
+	    fillcolor=white
+	    label="Child 2"
+	];
+
+	"C3" [
+	    style=filled
+	    fillcolor=white
+	    label="Child 3"
+	];
+
+	"C4" [
+	    style=filled
+	    fillcolor=white
+	    label="Child 4"
+	];
+
+	"S1" -> "C1" [color=white];
+	"S1" -> "C2" [color=white];
+	"C2" -> "C3" [color=white];
+	"C2" -> "C4" [color=white];
+
+}

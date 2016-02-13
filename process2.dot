@@ -1,0 +1,40 @@
+digraph G {
+
+	color="#ffffff";
+	fillcolor="#ffffff";
+	fontcolor=red;
+	bgcolor="#002b36";
+	style=filled;
+	node [style=filled,color=green];
+
+	subgraph cluster_0 {
+			style=filled;
+			color=lightgrey;
+			fillcolor=lightgrey;
+			node [style=filled,color=gray];
+			"C1A" [label="Atoms"];
+			"C1S" [label="Stack"];
+			"C1F" [label="Functions"];
+			"C1M" [label="Mailbox"];
+			label="process #1";
+		};
+
+	subgraph cluster_1 {
+			style=filled;
+			color=lightgrey;
+			fillcolor=lightgrey;
+			node [style=filled,color=gray];
+			label = "process #2";
+			"C2A" [label="Atoms"];
+			"C2S" [label="Stack"];
+			"C2F" [label="Functions"];
+			"C2M" [label="Mailbox"];
+	};
+
+	"MSG1" [label="Message 1"];
+	"MSG2" [label="Message 2"];
+
+	C1F -> MSG1 -> C2M [color=blue];
+	C2F -> MSG2 -> C1M [color=blue];
+
+}
